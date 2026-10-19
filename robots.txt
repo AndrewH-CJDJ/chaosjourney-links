@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://andrewh-cjdj.github.io/chaosjourney-links/sitemap.xml
