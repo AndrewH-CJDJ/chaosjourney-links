@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Jost:wght@400;500;600&display=swap">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","name":"Chaos Journey","genre":["House","Deep House"],"url":"https://chaosjourney.au/","image":"https://chaosjourney.au/og-image.jpg","sameAs":["https://soundcloud.com/cj_dj","https://www.instagram.com/chaosjourney.music/"],"track":[{"@type":"MusicRecording","name":"Step Into The Light","url":"https://soundcloud.com/cj_dj/step-into-the-light"},{"@type":"MusicRecording","name":"The Reality - Your Will Power","url":"https://soundcloud.com/cj_dj/the-reality-your-will-power"},{"@type":"MusicRecording","name":"Pressure - The New Reality","url":"https://soundcloud.com/cj_dj/pressure-the-new-reality"},{"@type":"MusicRecording","name":"Feeling - Deep Mix","url":"https://soundcloud.com/cj_dj/feeling-deep-mix"},{"@type":"MusicRecording","name":"Tell Me What You're Feeling","url":"https://soundcloud.com/cj_dj/tell-me-what-youre-feeling"},{"@type":"MusicRecording","name":"Thanks","url":"https://soundcloud.com/cj_dj/thanks"},{"@type":"MusicRecording","name":"Thinking","url":"https://soundcloud.com/cj_dj/thinking"},{"@type":"MusicRecording","name":"Party All Night","url":"https://soundcloud.com/cj_dj/party-all-night"},{"@type":"MusicRecording","name":"The Simulation","url":"https://soundcloud.com/cj_dj/the-simulation"},{"@type":"MusicRecording","name":"Just Not Found - Found it Mix","url":"https://soundcloud.com/cj_dj/just-not-found-found-it-mix"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","name":"Chaos Journey","genre":["House","Deep House"],"url":"https://chaosjourney.au/","image":"https://chaosjourney.au/og-image.jpg","sameAs":["https://soundcloud.com/cj_dj","https://www.instagram.com/chaosjourney.music/"],"track":[{"@type":"MusicRecording","name":"Step Into The Light","url":"https://soundcloud.com/cj_dj/step-into-the-light"},{"@type":"MusicRecording","name":"Tell Me If You Ever Believe","url":"https://soundcloud.com/cj_dj/tell-me-if-you-ever-believe"},{"@type":"MusicRecording","name":"Know How It Feels","url":"https://soundcloud.com/cj_dj/know-how-it-feels"},{"@type":"MusicRecording","name":"This is the last time! (Tasty Mix)","url":"https://soundcloud.com/cj_dj/this-is-the-last-time-tasty-mix"},{"@type":"MusicRecording","name":"On Friday","url":"https://soundcloud.com/cj_dj/on-friday"},{"@type":"MusicRecording","name":"I'll Be Here","url":"https://soundcloud.com/cj_dj/ill-be-here"},{"@type":"MusicRecording","name":"Numbness - If I Die","url":"https://soundcloud.com/cj_dj/numbness-if-i-die"},{"@type":"MusicRecording","name":"The Reality - Your Will Power","url":"https://soundcloud.com/cj_dj/the-reality-your-will-power"},{"@type":"MusicRecording","name":"Pressure - The New Reality","url":"https://soundcloud.com/cj_dj/pressure-the-new-reality"},{"@type":"MusicRecording","name":"Feeling - Deep Mix","url":"https://soundcloud.com/cj_dj/feeling-deep-mix"},{"@type":"MusicRecording","name":"Tell Me What You're Feeling","url":"https://soundcloud.com/cj_dj/tell-me-what-youre-feeling"},{"@type":"MusicRecording","name":"Thanks","url":"https://soundcloud.com/cj_dj/thanks"},{"@type":"MusicRecording","name":"Thinking","url":"https://soundcloud.com/cj_dj/thinking"}]}</script>
 <style>
   :root { --ink: #050403; --panel: #12100c; --line: #2e261b; --fg: #f0e8da; --muted: #a99a86; --gold: #e8b56c; --gold-deep: #b9853f;
     --display: "Michroma", "Eurostile", "Bahnschrift", system-ui, sans-serif; --body: "Jost", "Segoe UI", system-ui, sans-serif; color-scheme: dark; }
@@ -58,7 +58,10 @@
   .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; text-align: left; }
   .grid a { display: grid; gap: 6px; text-decoration: none; }
   .grid img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 6px; display: block; background: var(--panel); }
-  .grid span { font-size: 13px; line-height: 1.3; color: var(--muted); overflow-wrap: anywhere; }
+  .grid span { font-size: 13px; line-height: 1.3; color: var(--muted); overflow-wrap: anywhere; display: grid; gap: 2px; }
+  .grid em { font-style: normal; font-size: 12px; color: var(--gold); }
+  .bio { margin: 6px auto 0; max-width: 46ch; color: var(--muted); font-size: 16px; text-wrap: pretty; }
+  .player { width: min(100%, 380px); height: 166px; border: 0; border-radius: 10px; background: var(--panel); }
   .grid a:hover span { color: var(--fg); }
   .all { color: var(--gold); text-decoration: none; font-weight: 500; }
   .all:hover { text-decoration: underline; text-underline-offset: 4px; }
@@ -72,6 +75,7 @@
   <header>
     <h1><img src="logo.png" alt="Chaos Journey" width="1000" height="400"></h1>
     <p class="tagline">House &amp; deep house from the Gold Coast, Australia</p>
+    
   </header>
   
   
@@ -82,6 +86,8 @@
       </a>
       <h3>Step Into The Light</h3>
       <p class="meta">House · 18 October 2026</p>
+      <iframe class="player" title="Play Step Into The Light" loading="lazy" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fcj_dj%2Fstep-into-the-light&amp;color=%23e8b56c&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;show_artwork=false&amp;visual=false"></iframe>
       <a class="btn primary" href="https://soundcloud.com/cj_dj/step-into-the-light" rel="noopener">Listen on SoundCloud</a>
     </section>
   
@@ -90,17 +96,41 @@
       <a class="btn" href="https://www.instagram.com/chaosjourney.music/" rel="noopener me">Instagram</a>
     </nav>
   
+    <section class="recent" aria-labelledby="popular-h">
+      <h2 id="popular-h" class="eyebrow">Most played</h2>
+      <ul class="grid">
+        <li><a href="https://soundcloud.com/cj_dj/tell-me-if-you-ever-believe" rel="noopener">
+          <img src="https://i1.sndcdn.com/artworks-WHSXzWM4EyM14CSf-DCno9Q-t500x500.jpg" alt="Tell Me If You Ever Believe cover art" width="500" height="500" loading="lazy">
+          <span>Tell Me If You Ever Believe<em>2.5K plays</em></span></a></li>
+        <li><a href="https://soundcloud.com/cj_dj/know-how-it-feels" rel="noopener">
+          <img src="https://i1.sndcdn.com/artworks-lFYxumn8EYx0EaUp-anmYRA-t500x500.jpg" alt="Know How It Feels cover art" width="500" height="500" loading="lazy">
+          <span>Know How It Feels<em>1.9K plays</em></span></a></li>
+        <li><a href="https://soundcloud.com/cj_dj/this-is-the-last-time-tasty-mix" rel="noopener">
+          <img src="https://i1.sndcdn.com/artworks-JQpGqKYv8nt9tUom-cOgRQg-t500x500.jpg" alt="This is the last time! (Tasty Mix) cover art" width="500" height="500" loading="lazy">
+          <span>This is the last time! (Tasty Mix)<em>1.9K plays</em></span></a></li>
+        <li><a href="https://soundcloud.com/cj_dj/on-friday" rel="noopener">
+          <img src="emblem.png" alt="On Friday cover art" width="500" height="500" loading="lazy">
+          <span>On Friday<em>1.5K plays</em></span></a></li>
+        <li><a href="https://soundcloud.com/cj_dj/ill-be-here" rel="noopener">
+          <img src="https://i1.sndcdn.com/artworks-3PJRMMazcs9gvklw-MPYnrw-t500x500.jpg" alt="I&#39;ll Be Here cover art" width="500" height="500" loading="lazy">
+          <span>I&#39;ll Be Here<em>1.5K plays</em></span></a></li>
+        <li><a href="https://soundcloud.com/cj_dj/numbness-if-i-die" rel="noopener">
+          <img src="emblem.png" alt="Numbness - If I Die cover art" width="500" height="500" loading="lazy">
+          <span>Numbness - If I Die<em>1.3K plays</em></span></a></li>
+      </ul>
+    </section>
+  
     <section class="recent" aria-labelledby="recent-h">
-      <h2 id="recent-h" class="eyebrow">More tracks</h2>
+      <h2 id="recent-h" class="eyebrow">Latest tracks</h2>
       <ul class="grid">
         <li><a href="https://soundcloud.com/cj_dj/the-reality-your-will-power" rel="noopener">
           <img src="https://i1.sndcdn.com/artworks-W4JypFxNya24JEWn-y6K2Fw-t500x500.jpg" alt="The Reality - Your Will Power cover art" width="500" height="500" loading="lazy">
           <span>The Reality - Your Will Power</span></a></li>
         <li><a href="https://soundcloud.com/cj_dj/pressure-the-new-reality" rel="noopener">
-          <img src="https://i1.sndcdn.com/artworks-ztjOGmLygaqpEQEF-zI4dvg-t500x500.jpg" alt="Pressure - The New Reality cover art" width="500" height="500" loading="lazy">
+          <img src="https://i1.sndcdn.com/artworks-2kYAdbpbfzaHNgZ0-5i1z1A-t500x500.jpg" alt="Pressure - The New Reality cover art" width="500" height="500" loading="lazy">
           <span>Pressure - The New Reality</span></a></li>
         <li><a href="https://soundcloud.com/cj_dj/feeling-deep-mix" rel="noopener">
-          <img src="https://i1.sndcdn.com/artworks-WrS9YE8gobhpofj7-XPDbXA-t500x500.jpg" alt="Feeling - Deep Mix cover art" width="500" height="500" loading="lazy">
+          <img src="https://i1.sndcdn.com/artworks-Fnj9XYNoqf9BDpBu-8sL39g-t500x500.jpg" alt="Feeling - Deep Mix cover art" width="500" height="500" loading="lazy">
           <span>Feeling - Deep Mix</span></a></li>
         <li><a href="https://soundcloud.com/cj_dj/tell-me-what-youre-feeling" rel="noopener">
           <img src="https://i1.sndcdn.com/artworks-WrS9YE8gobhpofj7-XPDbXA-t500x500.jpg" alt="Tell Me What You&#39;re Feeling cover art" width="500" height="500" loading="lazy">
@@ -111,15 +141,6 @@
         <li><a href="https://soundcloud.com/cj_dj/thinking" rel="noopener">
           <img src="https://i1.sndcdn.com/artworks-l9l2YQ89347h4YyO-PzRZbA-t500x500.jpg" alt="Thinking cover art" width="500" height="500" loading="lazy">
           <span>Thinking</span></a></li>
-        <li><a href="https://soundcloud.com/cj_dj/party-all-night" rel="noopener">
-          <img src="https://i1.sndcdn.com/artworks-Dv4zK9nAFkgle3jt-wP3tEQ-t500x500.jpg" alt="Party All Night cover art" width="500" height="500" loading="lazy">
-          <span>Party All Night</span></a></li>
-        <li><a href="https://soundcloud.com/cj_dj/the-simulation" rel="noopener">
-          <img src="https://i1.sndcdn.com/artworks-2ATnbZ6iyO9Ixspg-vvv7EA-t500x500.jpg" alt="The Simulation cover art" width="500" height="500" loading="lazy">
-          <span>The Simulation</span></a></li>
-        <li><a href="https://soundcloud.com/cj_dj/just-not-found-found-it-mix" rel="noopener">
-          <img src="https://i1.sndcdn.com/artworks-WdVWubGP8FzmazEM-CztKgg-t500x500.jpg" alt="Just Not Found - Found it Mix cover art" width="500" height="500" loading="lazy">
-          <span>Just Not Found - Found it Mix</span></a></li>
       </ul>
       <a class="all" href="https://soundcloud.com/cj_dj" rel="noopener">All 151 tracks on SoundCloud →</a>
     </section>
